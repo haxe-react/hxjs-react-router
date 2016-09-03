@@ -3,8 +3,12 @@ package react;
 @:jsRequire('react-router')
 extern class ReactRouter {
 	static public var hashHistory:Dynamic;
-	static public var browserHistory:Dynamic;
+	static public var browserHistory:BrowserHistory;
 	static public var withRouter:Dynamic->Dynamic;
+}
+
+extern class BrowserHistory {
+	public function push(path:String):Void;
 }
 
 @:jsRequire('react-router','Link')

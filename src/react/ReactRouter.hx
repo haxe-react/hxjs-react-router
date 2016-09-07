@@ -28,3 +28,13 @@ extern class IndexRoute {}
 
 @:jsRequire('react-router','IndexRedirect')
 extern class IndexRedirect {}
+
+typedef RoutePropsOfParams<P> = RoutePropsOf<P, Dynamic>; 
+typedef RoutePropsOfQuery<Q> = RoutePropsOf<Dynamic, Q>; 
+
+typedef RoutePropsOf<P, Q> = {
+	params:P,
+	location:{
+		query:Q,
+	}
+}

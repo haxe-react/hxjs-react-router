@@ -14,20 +14,23 @@ extern class BrowserHistory {
 @:jsRequire('react-router','Link')
 extern class Link {}
 
+@:jsRequire('react-router','IndexLink')
+extern class IndexLink {}
+
 @:jsRequire('react-router','Redirect')
 extern class Redirect {}
+
+@:jsRequire('react-router','IndexRedirect')
+extern class IndexRedirect {}
 
 @:jsRequire('react-router','Route')
 extern class Route {}
 
-@:jsRequire('react-router','Router')
-extern class Router {}
-
 @:jsRequire('react-router','IndexRoute')
 extern class IndexRoute {}
 
-@:jsRequire('react-router','IndexRedirect')
-extern class IndexRedirect {}
+@:jsRequire('react-router','Router')
+extern class Router {}
 
 @:jsRequire('react-router','RouterContext')
 extern class RouterContext {}

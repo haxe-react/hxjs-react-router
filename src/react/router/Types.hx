@@ -11,8 +11,8 @@ typedef Any = Dynamic;
 typedef HashHistory = Router<Any, Any>;
 typedef BrowserHistory = Router<Any, Any>;
 typedef RouteProps = RoutePropsOf<Any, Any>;
-typedef RoutePropsOfParams<P> = RoutePropsOf<P, Any>; 
-typedef RoutePropsOfQuery<Q> = RoutePropsOf<Any, Q>; 
+typedef RoutePropsOfParams<P> = RoutePropsOf<P, Any>;
+typedef RoutePropsOfQuery<Q> = RoutePropsOf<Any, Q>;
 
 typedef RoutePropsOf<P, Q> = {
 	route:Route<P, Q>,

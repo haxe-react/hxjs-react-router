@@ -14,6 +14,15 @@ typedef RouteProps = RoutePropsOf<Any, Any>;
 typedef RoutePropsOfParams<P> = RoutePropsOf<P, Any>;
 typedef RoutePropsOfQuery<Q> = RoutePropsOf<Any, Q>;
 
+typedef Location<Q> = {
+	pathname:Pathname,
+	search:QueryString,
+	query:Query<Q>,
+	state:LocationState,
+	action:Action,
+	key:LocationKey,
+};
+
 typedef RoutePropsOf<P, Q> = {
 	route:Route<P, Q>,
 	router:Router<P, Q>,
@@ -32,14 +41,6 @@ private typedef Component = EitherType<Class<ReactComponent>, String>;
 private typedef EnterHook<P, Q> = RouterState<P, Q>->RedirectFunction<Q>->?Function->Any;
 private typedef Hash = String;
 private typedef LeaveHook<P, Q> = RouterState<P, Q>->Any;
-private typedef Location<Q> = {
-	pathname:Pathname,
-	search:QueryString,
-	query:Query<Q>,
-	state:LocationState,
-	action:Action,
-	key:LocationKey,
-};
 private typedef LocationDescriptorObject<Q> = {
 	pathname:Pathname,
 	search:QueryString,

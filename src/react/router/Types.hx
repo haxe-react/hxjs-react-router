@@ -31,12 +31,12 @@ typedef RoutePropsOf<P, Q> = {
 }
 
 private typedef Object = Any;
-@:enum
-private abstract Action(String) {
+#if haxe4 private enum #else @:enum private #end abstract Action(String) {
 	var Push = 'PUSH';
 	var Replace = 'REPLACE';
 	var Pop = 'POP';
 }
+
 private typedef Component = EitherType<Class<ReactComponent>, String>;
 private typedef EnterHook<P, Q> = RouterState<P, Q>->RedirectFunction<Q>->?Function->Any;
 private typedef Hash = String;

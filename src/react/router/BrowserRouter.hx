@@ -1,4 +1,4 @@
-package src.react.router;
+package react.router;
 
 /*
 * Avaliable for versions 4.0.0 and above
